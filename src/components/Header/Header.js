@@ -7,8 +7,8 @@ import profileImage from "../../assets/Images/Mohan-muruge.jpg";
 function Header() {
     return (
         <>
-            <header className="header__">
-                <a className="header__logo" hre="#">
+            <header className="header">
+                <a className="header__logo" href="#">
                     <img className="header__logo-image" src={brainflixLogo} alt="BrainFlix" />
                 </a>
                 <div className="header__main">

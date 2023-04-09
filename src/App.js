@@ -1,6 +1,9 @@
 import './App.scss';
 import Header from "./components/Header/Header.js";
 import VideoNav from "./components/VideoNav/VideoNav.js"
+import VideoHero from './components/VideoHero/VideoHero.js';
+import Comments from "./components/Comments/Comments.js";
+import Form from "./components/Form/Form.js";
 import videoDetailsData from "./data/videoDetailsData.json";
 import videos from "./data/videos.json";
 import { useState } from "react";
@@ -22,6 +25,9 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <VideoHero selectedVideo={selectedVideo}/>
+      <Form selectedVideo={selectedVideo}/>
+      <Comments selectedVideo={selectedVideo}/>
       <VideoNav clickHandler={videoClick} videos={filteredVideos}/>
     </div>
   );
