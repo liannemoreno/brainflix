@@ -28,7 +28,7 @@ function Comments({selectedVideo}) {
            {
              comments.map(comment =>
             <div className="comment">
-                <img src={grayImage} alt="empty profile picture"></img>
+                <img className="comment__image" src={grayImage} alt="empty profile picture"></img>
                 <div className="comment__wrapper">
                     <div className = "comment__title">
                         <p className="comment__title--name">{comment.name}</p>
