@@ -21,11 +21,11 @@ function Description({ selectedVideo }) {
                 </div>
                 <div className="description__details-right">
                     <p className="description__details-right--views">
-                        <img className ="description__details-right--views-image" scr={likesIcon} alt="heart icon"></img>
+                        <img className ="description__details-right--views-image" src={likesIcon} alt="heart icon"></img>
                         {likes}
                     </p>
                     <p className="description__details-left--likes">
-                        <img scr={viewsIcon} alt="views icon"></img>
+                        <img src={viewsIcon} alt="views icon"></img>
                         {views}
                     </p>
                 </div>
