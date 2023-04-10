@@ -9,7 +9,12 @@
         font-weight: 600;
         color:$color-primary-silver;
         padding: 5%;
-        line-height: 18px;
+        line-height: 1.125rem;
+
+        @include mixins.desktop{
+            padding: 22% 5% 10% 5%;
+        }
+
     }
     
 }

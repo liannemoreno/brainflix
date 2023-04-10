@@ -6,10 +6,23 @@
 .hero{
     
     &__video{
-        position: relative;
+        position:relative;
 
         &--poster{
             width: 100%;
+
+            @include mixins.tablet{
+                padding-left: 5%;
+                padding-right:5%;
+                background-color: $color-primary-black;
+            }
+
+            @include mixins.desktop{
+                padding-left: 10%;
+                padding-right:10%;
+                background-color: $color-primary-black;
+            }
+                
         }
         
         &-control{

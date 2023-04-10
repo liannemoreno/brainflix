@@ -1,7 +1,18 @@
-@use "./styles/partials/fonts";
-@use "./styles/partials/global";
-@use "./styles/partials/mixins";
-@use "./styles/partials/variables";
+@use "./styles/partials/fonts" as *;
+@use "./styles/partials/global" as *;
+@use "./styles/partials/mixins" as mixins;
+@use "./styles/partials/variables" as *;
 
+.main{
+    @include mixins.desktop{
+       display:flex; 
 
+       &__nav{
+        margin-right:4%;
+        margin-left:1%;
+        }
+    }
+
+    
+}
 

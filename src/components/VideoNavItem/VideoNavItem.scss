@@ -12,6 +12,9 @@
     @include mixins.tablet{
         padding: 2% 57% 2% 5%;
     }
+    @include mixins.desktop{
+        padding:4% 1% 4% 0;
+    }
 
     &-image{
      background-color: $color-secondary-mercury;

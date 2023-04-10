@@ -6,11 +6,36 @@
 .header {
     display: flex;
     flex-direction: column;
-    padding:5%;
+    padding: 5%;
+
+    @include mixins.tablet {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2% 5%;
+
+    }
+
+    @include mixins.desktop {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1% 5rem;
+
+    }
 
     &__logo {
         display: flex;
         justify-content: space-around;
+
+        @include mixins.tablet {
+            margin-right: 15%;
+
+        }
+
+        @include mixins.desktop {
+            margin-right: 49%;
+        }
     }
 
     &__button {
@@ -21,15 +46,37 @@
             display: flex;
             align-items: center;
             background-color: $color-primary-blue;
-            border-color:$color-primary-blue;
+            border-color: $color-primary-blue;
             border-radius: 0.25rem;
             border-width: 0.009rem;
-           height:36px;
+            height: 2.25rem;
 
-           & p{
-            padding: 0 90px;
-           }
+            & p {
+                padding: 0 5.625rem;
+            }
+
+            @include mixins.tablet {
+                width: 20vw;
+                height: 1.875rem;
+
+                & p {
+                    padding: 0 1.625rem;
+                }
+
+            }
+
+            @include mixins.desktop {
+                width: 11vw;
+                height: 1.975rem;
+
+                & p {
+                    padding: 0 1.625rem;
+                }
+
+            }
         }
+
+
     }
 
     &__main {
@@ -56,17 +103,27 @@
             padding-top: 5%;
             padding-bottom: 5%;
 
+            @include mixins.desktop {
+                padding: 0;
+            }
+
             &-bar {
-                height: 27px;
+                height: 1.6875rem;
                 background-color: $color-secondary-alabaster;
                 border-radius: .25rem;
                 border-width: .009rem;
+
+                @include mixins.desktop {
+                    height: 1.9rem;
+                }
 
                 &::placeholder {
                     color: $color-primary-black;
                     font-family: Avenir;
                     padding-left: 2%;
                 }
+
+
             }
 
         }
@@ -75,6 +132,14 @@
     &__image--active2 {
         @include mixins.mobil {
             display: none;
+        }
+
+        @include mixins.tablet {
+            display: revert;
+            border-radius: 50%;
+            width: 2.25rem;
+            height: 2.25rem;
+
         }
     }
 

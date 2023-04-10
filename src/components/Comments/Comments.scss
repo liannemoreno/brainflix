@@ -15,21 +15,11 @@
         margin-left: 6%;
 
     }
-    
 
-    // @include tablet{
-    //     margin-left: 12%;
-    //     margin-right: 12%;
+    @include mixins.desktop {
+        padding-right: 5%;
 
-    // }
-
-    // @include desktop{  
-    //     margin-left: 25%;
-    //     margin-right: 25%;
-
-    // }
-
-
+    }
 
 
     &__image {

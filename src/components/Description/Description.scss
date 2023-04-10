@@ -9,9 +9,17 @@
         border-bottom: .0625rem $color-secondary-mercury solid;
         margin: 5% 5% 0% 5%;
         font-size:24px;
+
+        @include mixins.tablet{
+            border-bottom: none;
+        }
         
         & p{
             padding-bottom: 5%;
+            
+            @include mixins.tablet{
+                padding-bottom: 0%;
+            }
         }
     }
 
@@ -20,6 +28,11 @@
         border-bottom: .0625rem $color-secondary-mercury solid;
         margin: 5% 5% 0% 5%;
         color:$color-primary-silver;
+        justify-content: space-between;
+
+        @include mixins.tablet{
+            padding-bottom: 0%;
+        }
 
         &-left{
             padding: 0 13.75% 5% 0; 
@@ -29,10 +42,25 @@
                 font-weight: 600;
                 padding-bottom: 10%;
             }
+
+            @include mixins.tablet{
+                display:flex;
+                padding:0%;
+
+                &--date{
+                    padding-left: 1.875rem;
+                }
+
+            }
         }
         
         &-right{
             padding: 0 0 5% 13.75%; 
+
+            @include mixins.tablet{
+                display:flex;
+                padding:0%;
+            }
 
             &--views{
                 padding-bottom: 10%;
@@ -51,7 +79,13 @@
                     padding-right:10%;
                 }
 
+                @include mixins.tablet{
+                    padding-right: 1.875rem;
+                }
+
             }
+
+            
         }
     }
 
