@@ -5,7 +5,7 @@ import "../VideoNav/VideoNav.scss";
 function VideoNav({clickHandler, videos}) {
     return (
         <nav className="nav">
-            <p>NEXT VIDEOS</p>
+            <h4>NEXT VIDEOS</h4>
             {
                 videos.map(video => (
                     <VideoNavItem key={video.id} video={video} clickHandler={clickHandler} />

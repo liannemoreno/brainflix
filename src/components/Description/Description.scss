@@ -1,0 +1,62 @@
+@use "../../styles/partials/fonts" as fonts;
+@use "../../styles/partials/mixins" as mixins;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as global;
+
+.description{
+    &__title{
+        font-weight: 600;
+        border-bottom: .0625rem $color-secondary-mercury solid;
+        margin: 5% 5% 0% 5%;
+        font-size:24px;
+        
+        & p{
+            padding-bottom: 5%;
+        }
+    }
+
+    &__details{
+        display:flex;
+        border-bottom: .0625rem $color-secondary-mercury solid;
+        margin: 5% 5% 0% 5%;
+        color:$color-primary-silver;
+
+        &-left{
+            padding: 0 13.75% 5% 0; 
+
+            &--channel{
+                color:$color-primary-black;
+                font-weight: 600;
+                padding-bottom: 10%;
+            }
+        }
+        
+        &-right{
+            padding: 0 0 5% 13.75%; 
+
+            &--views{
+                padding-bottom: 10%;
+                display:flex;
+
+                & img{
+                    padding-right:10%;
+                }
+            }
+
+            &--likes{
+                padding-bottom: 10%;
+                display:flex;
+
+                & img{
+                    padding-right:10%;
+                }
+
+            }
+        }
+    }
+
+    &__textbox{
+        padding: 5%;
+        font-size: 13px;
+    }
+}

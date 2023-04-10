@@ -1,0 +1,43 @@
+@use "../../styles/partials/fonts" as fonts;
+@use "../../styles/partials/mixins" as mixins;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as global;
+
+
+.nav__item{
+
+    display:flex;
+    padding: 5%; 
+
+    @include mixins.tablet{
+        padding: 2% 57% 2% 5%;
+    }
+
+    &-image{
+     background-color: $color-secondary-mercury;
+     max-width: 8rem;
+     max-height:5rem ;
+     min-height: 5rem;
+     min-width: 8rem;   
+     border-radius: .25rem;
+     object-fit:fill;
+
+    }
+
+    &-details{
+        margin-left:1rem ;
+        display:flex;
+        flex-direction: column;
+        gap: .5rem;
+        font-size: 13px;
+
+        &--title{
+            font-weight: 600;
+            
+        }
+    }
+
+
+
+
+}

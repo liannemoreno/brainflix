@@ -1,0 +1,51 @@
+@use "../../styles/partials/fonts" as fonts;
+@use "../../styles/partials/mixins" as mixins;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as global;
+
+.hero{
+    
+    &__video{
+        position: relative;
+
+        &--poster{
+            width: 100%;
+        }
+        
+        &-control{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        
+        &-control-play img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        &-control-right {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 1;
+
+            &--screen img,
+            &--volume img {
+                margin-left: 10px;
+            }
+            &--screen img {
+                z-index: 1;
+            }
+            &--volume img {
+                z-index: 1;
+            }
+        }
+    }
+}
+

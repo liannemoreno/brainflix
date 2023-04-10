@@ -1,4 +1,5 @@
 import React from "react";
+import '../Header/Header.scss';
 import brainflixLogo from "../../assets/Images/BrainFlix-logo.svg";
 import searchIcon from "../../assets/Images/search.svg";
 import uploadIcon from "../../assets/Images/upload.svg";
@@ -13,18 +14,18 @@ function Header() {
                 </a>
                 <div className="header__main">
                     <form className="header__main-search">
-                        <input className="header__main-search-bar" type="text" name="searchBar" id="searchBar" />
+                        <input className="header__main-search-bar" placeholder="Search" type="text" name="searchBar" id="searchBar" size="35" />
                         <image className="header__main-search-image" src={searchIcon} type="image" name="headerImage" id="headerImage" />
                     </form>
+                    <img className="header__main-image--active1" src={profileImage} alt="profile" />
                 </div>
-                <img className="header__image active1" src={profileImage} alt="profile" />
                 <div className="header__button">
                     <button className="header__button-upload">
                         <img className="header__button-upload-image" src={uploadIcon} alt="upload icon"/>
-                        UPLOAD
+                        <p>UPLOAD</p>
                     </button>
                 </div>
-                <img className="header__image active2" src={profileImage} alt="profile" />
+                <img className="header__image--active2" src={profileImage} alt="profile" />
             </header>
         </>
     )

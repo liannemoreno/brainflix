@@ -1,0 +1,175 @@
+@use "../../styles/partials/fonts" as fonts;
+@use "../../styles/partials/mixins" as mixins;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as global;
+
+
+
+.form {
+    color: $color-primary-black;
+    border-bottom: 0.0625rem solid $color-secondary-mercury;
+    margin: 0% 5%;
+
+    // &__wrapper{
+
+    // }
+
+    &__title {
+        font-size: 13px;
+    }
+
+    &__input {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    &__main {
+        padding: 5% 0%;
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-evenly;
+
+        @include mixins.tablet {
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        &-image {
+            border-radius: 50%;
+            width: 2.25rem;
+            height: 2.25rem;
+        }
+
+        &-comment {
+            display: flex;
+            flex-direction: column;
+
+            @include mixins.tablet {
+                padding-bottom: 2%;
+            }
+
+            &-text {
+                color: $color-primary-silver;
+                font-size: 13px;
+                font-weight: 600;
+                padding-bottom: 5%;
+
+                @include mixins.tablet {
+                    padding-bottom: 2%;
+                }
+
+            }
+
+            &-textarea {
+                color: $color-primary-black;
+                width: 65vw;
+                background-color: $color-secondary-alabaster;
+                height: 6rem;
+                font-family: Avenir;
+                border-color: $color-secondary-mercury;
+                border-radius: 0.25rem;
+                padding: 2% 3%;
+
+                &::placeholder {
+                    color: $color-primary-black;
+                }
+
+                @include mixins.tablet {
+                    padding-bottom: 2%;
+                    height: 24px;
+                    width: 50vw;
+                }
+
+            }
+        }
+
+        &-button {
+            background-color: $color-primary-blue;
+            color: $color-primary-white;
+            height: 2.5rem;
+            width: 77%;
+            cursor: pointer;
+            text-align: center;
+            line-height: 0.625rem;
+            border-width: initial;
+            border-style: none;
+            border-color: initial;
+            border-image: initial;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            & img {
+                padding: 5%;
+            }
+
+            & p {
+                padding-left: 15%;
+            }
+
+            @include mixins.mobil {
+                margin-left: 22%;
+                margin-bottom: 5%;
+                margin-top: 1%;
+
+
+            }
+
+            @include mixins.tablet {
+                display: none;
+
+            }
+
+        }
+
+        &-button1 {
+            @include mixins.mobil {
+                display: none;
+            }
+
+            @include mixins.tablet {
+                display: revert;
+
+                background-color: $color-primary-blue;
+                color: $color-primary-white;
+                height: 2.5rem;
+                width: 22%;
+                cursor: pointer;
+                text-align: center;
+                line-height: 0.625rem;
+                border-width: initial;
+                border-style: none;
+                border-color: initial;
+                border-image: initial;
+                border-radius: 0.25rem;
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: .625rem;
+                margin-right: 5%;
+
+                & img {
+                    margin-left: 5%;
+                }
+
+                & p {
+                    padding: 0% 12%;
+                    align-self: center;
+                }
+
+
+
+
+            }
+        }
+    }
+
+}

@@ -8,7 +8,7 @@ function Description({ selectedVideo }) {
     return (
         <section className="description">
             <h2 className="description__title">
-                {title}
+                <p>{title}</p>
             </h2>
             <div className="description__details">
                 <div className="description__details-left">
@@ -20,14 +20,15 @@ function Description({ selectedVideo }) {
                     </p>
                 </div>
                 <div className="description__details-right">
-                    <p className="description__details-right--views">
-                        <img className ="description__details-right--views-image" src={likesIcon} alt="heart icon"></img>
-                        {likes}
-                    </p>
-                    <p className="description__details-left--likes">
+                    <p className="description__details-right--likes">
                         <img src={viewsIcon} alt="views icon"></img>
                         {views}
                     </p>
+                    <p className="description__details-right--views">
+                        <img src={likesIcon} alt="heart icon"></img>
+                        {likes}
+                    </p>
+                    
                 </div>
             </div>
             <div className="description__textbox">

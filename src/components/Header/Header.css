@@ -15,4 +15,11 @@
 }
 * {
   font-family: "Avenir";
-}/*# sourceMappingURL=App.css.map */
+}
+
+.header {
+  display: flex;
+}
+.header__main {
+  display: flex;
+}/*# sourceMappingURL=Header.css.map */

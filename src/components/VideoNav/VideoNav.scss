@@ -1,0 +1,15 @@
+@use "../../styles/partials/fonts" as fonts;
+@use "../../styles/partials/mixins" as mixins;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as global;
+
+.nav{
+
+    & h4{
+        font-weight: 600;
+        color:$color-primary-silver;
+        padding: 5%;
+        line-height: 18px;
+    }
+    
+}

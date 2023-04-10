@@ -7,7 +7,7 @@ import Description from './components/Description/Description';
 import Form from "./components/Form/Form.js";
 import videoDetailsData from "./data/videoDetailsData.json";
 import videos from "./data/videos.json";
-import { useState } from "react";
+import {useState} from "react";
 
 
 function App() {

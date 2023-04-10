@@ -1,0 +1,82 @@
+@use "../../styles/partials/fonts" as fonts;
+@use "../../styles/partials/mixins" as mixins;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/global" as global;
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding:5%;
+
+    &__logo {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__button {
+
+        &-upload {
+            width: 90vw;
+            color: $color-primary-white;
+            display: flex;
+            align-items: center;
+            background-color: $color-primary-blue;
+            border-color:$color-primary-blue;
+            border-radius: 0.25rem;
+            border-width: 0.009rem;
+           height:36px;
+
+           & p{
+            padding: 0 90px;
+           }
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &-image {
+
+            &--active1 {
+                border-radius: 50%;
+                width: 2.25rem;
+                height: 2.25rem;
+
+                @include mixins.tablet {
+                    display: none;
+                }
+            }
+
+        }
+
+        &-search {
+            padding-top: 5%;
+            padding-bottom: 5%;
+
+            &-bar {
+                height: 27px;
+                background-color: $color-secondary-alabaster;
+                border-radius: .25rem;
+                border-width: .009rem;
+
+                &::placeholder {
+                    color: $color-primary-black;
+                    font-family: Avenir;
+                    padding-left: 2%;
+                }
+            }
+
+        }
+    }
+
+    &__image--active2 {
+        @include mixins.mobil {
+            display: none;
+        }
+    }
+
+
+}
