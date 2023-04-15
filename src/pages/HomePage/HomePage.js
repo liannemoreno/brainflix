@@ -1,51 +1,61 @@
 import './HomePage.scss';
-import { useState } from "react";
-import Header from "../../components/Header/Header.js";
+import { useEffect, useState } from "react";
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 import VideoNav from "../../components/VideoNav/VideoNav.js"
 import VideoHero from '../../components/VideoHero/VideoHero.js';
 import Comments from "../../components/Comments/Comments.js";
-import Description from '../../components/Description/Description';
+import Description from '../../components/Description/Description.js';
 import Form from "../../components/Form/Form.js";
-import videoDetailsData from "../../data/videoDetailsData.json";
-import videos from "../../data/videos.json";
+
 
 function HomePage() {
-  const [selectedVideo, setSelectedVideo] = useState(videoDetailsData[0])
+    const {idFromParams} = useParams();
+    const [videos, setVideos] = useState([])
 
-  const videoClick = (videoId) => {
+    let defaultVideoId= null;
 
-    const foundVideo = videoDetailsData.find(video => video.id === videoId)
-    setSelectedVideo(foundVideo);
-  }
+    if (videos.length > 0){
+        defaultVideoId= videos[0].id;
+    }
 
-  const filteredVideos = videos.filter(video => video.id !== selectedVideo.id)
+    let videoIdToDisplay = idFromParams || defaultVideoId;
+
+    const filteredVideos = videos.filter(video => video.id !== videoIdToDisplay)
+
+    useEffect(() => {
+        axios.get('https://project-2-api.herokuapp.com/videos/?api_key=c98f4ffe-8ba9-4da3-95d5-1e6d91091ddb')
+            .then(response => {
+                setVideos(response.data);
+            })
+    }, [])
 
 
-
-  return (
-    <div className="App">
-      <Header />
-      <VideoHero selectedVideo={selectedVideo} /> 
-      <section className="main">
-        <section className="main__main">
-          <div className="main__description">
-            <Description selectedVideo={selectedVideo} />
-          </div>
-          <div className="main__form">
-            <Form selectedVideo={selectedVideo} />
-          </div>
-          <div className="main__comments">
-            <Comments selectedVideo={selectedVideo} />
-          </div>
-        </section>
-        <section className="main__nav">
-          <div className="main__nav-bar">
-            <VideoNav clickHandler={videoClick} videos={filteredVideos} />
-          </div>
-        </section>
-      </section>
-    </div>
-  );
+    return (
+        <div className="App">
+            <VideoHero selectedVideoId={videoIdToDisplay} videos={videos}/>
+            <section className="main">
+                {/* <section className="main__main">
+                    <div className="main__description">
+                        <Description selectedVideoId={videoIdToDisplay} />
+                    </div>
+                    <div className="main__form">
+                        <Form selectedVideoId={videoIdToDisplay} />
+                    </div>
+                    <div className="main__comments">
+                        <Comments selectedVideoId={videoIdToDisplay} />
+                    </div>
+                </section> */}
+                <section className="main__nav">
+                    <div className="main__nav-bar">
+                        <VideoNav videos={filteredVideos} />
+                    </div>
+                </section>
+            </section>
+        </div>
+    );
 }
 
 export default HomePage;
+
+{/* <VideoNav clickHandler={videoClick} videos={filteredVideos} /> */}

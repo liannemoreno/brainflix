@@ -5,8 +5,14 @@ import fullScreenIcon from "../../assets/Images/fullscreen.svg";
 import volumeUpIcon from "../../assets/Images/volume_up.svg";
 
 
-function VideoHero({ selectedVideo }) {
-    const { image, video, duration } = selectedVideo;
+function VideoHero({selectedVideoId, videos}) {
+    const selectedVideo = videos.find((video) => video.id === selectedVideoId);
+
+    if (!selectedVideo) {
+        return <div>Loading...</div>;
+    }
+
+    const {image, video, duration} = selectedVideo;
     return (
         <section className="hero">
             <div className="hero__video">
@@ -14,7 +20,7 @@ function VideoHero({ selectedVideo }) {
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <div className="hero__video-control">
+                {/* <div className="hero__video-control">
                     <button className="hero__video-control-play">
                         <img src={pauseIcon} alt="playIcon" />
                     </button>
@@ -27,9 +33,12 @@ function VideoHero({ selectedVideo }) {
                         <button className="hero__video-control-right--screen"><img src={fullScreenIcon} alt="full screen icon" /></button>
                         <button className="hero__video-control-right--volume"><img src={volumeUpIcon} alt="volume up icon" /></button>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
-    )
+
+   )
+
+    
 }
 export default VideoHero
