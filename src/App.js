@@ -6,6 +6,7 @@ import Comments from "./components/Comments/Comments.js";
 import Description from './components/Description/Description';
 import Form from "./components/Form/Form.js";
 import videoDetailsData from "./data/videoDetailsData.json";
+import UploadVideo from './pages/UploadVideo/UploadVideo';
 import videos from "./data/videos.json";
 import {useState} from "react";
 
@@ -26,8 +27,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <VideoHero selectedVideo={selectedVideo} />
-      <section className="main">
+      {/* <VideoHero selectedVideo={selectedVideo} />  */}
+      <UploadVideo />
+       {/* <section className="main">
         <section className="main__main">
           <div className="main__description">
             <Description selectedVideo={selectedVideo} />
@@ -44,7 +46,7 @@ function App() {
             <VideoNav clickHandler={videoClick} videos={filteredVideos} />
           </div>
         </section>
-      </section>
+      </section> */}
     </div>
   );
 }

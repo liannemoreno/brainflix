@@ -15,12 +15,8 @@
     
     }
 
-    // &__wrapper{
-
-    // }
-
     &__title {
-        font-size: 13px;
+        font-size: .8125rem;
     }
 
     &__input {
@@ -65,7 +61,7 @@
 
             &-text {
                 color: $color-primary-silver;
-                font-size: 13px;
+                font-size: .8125rem;
                 font-weight: 600;
                 padding-bottom: 5%;
 
@@ -91,13 +87,13 @@
 
                 @include mixins.tablet {
                     padding-bottom: 2%;
-                    height: 24px;
+                    height: 1.5rem;
                     width: 50vw;
                 }
 
                 @include mixins.desktop {
                     padding-bottom: 2%;
-                    height: 24px;
+                    height: 1.5rem;
                     width: 30vw;
                 }
 

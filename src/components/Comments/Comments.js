@@ -8,7 +8,7 @@ function Comments({selectedVideo}) {
         <section className="comments">
            {
              comments.map(comment =>
-            <div className="comment">
+            <div className="comment" key={comment.id}>
                 <img className="comment__image" src={grayImage} alt="empty profile picture"></img>
                 <div className="comment__wrapper">
                     <div className = "comment__title">
@@ -23,22 +23,3 @@ function Comments({selectedVideo}) {
 )}
 
 export default Comments;
-//function to convert date to number of year, months, days ago (did not look good)
-// function getTimeDifference(timestamp) {
-//     const current = new Date().getTime();
-//     const previous = new Date(timestamp).getTime();
-//     const msPerMonth = 30 * 24 * 60 * 60 * 1000; // Number of milliseconds in a month
-//     const msPerYear = 365 * 24 * 60 * 60 * 1000; // Number of milliseconds in a year
-//     const elapsed = current - previous;
-    
-//     if (elapsed < msPerMonth) {
-//       return Math.round(elapsed / (24 * 60 * 60 * 1000)) + ' days ago';
-//     } else if (elapsed < msPerYear) {
-//       const months = Math.round(elapsed / msPerMonth);
-//       return months + (months == 1 ? ' month' : ' months') + ' ago';
-//     } else {
-//       const years = Math.round(elapsed / msPerYear);
-//       const months = Math.round((elapsed % msPerYear) / msPerMonth);
-//       return years + (years == 1 ? ' year' : ' years') + ' & ' + months + (months == 1 ? ' month' : ' months') + ' ago';
-//     }
-//   }

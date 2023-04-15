@@ -8,7 +8,7 @@
         font-weight: 600;
         border-bottom: .0625rem $color-secondary-mercury solid;
         margin: 5% 5% 0% 5%;
-        font-size:24px;
+        font-size:1.5rem;
 
         @include mixins.tablet{
             border-bottom: none;
@@ -91,6 +91,6 @@
 
     &__textbox{
         padding: 5%;
-        font-size: 13px;
+        font-size: .8125rem;
     }
 }
