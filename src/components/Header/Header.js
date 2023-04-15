@@ -1,5 +1,6 @@
 import React from "react";
 import '../Header/Header.scss';
+import {Link} from 'react-router-dom'
 import brainflixLogo from "../../assets/Images/BrainFlix-logo.svg";
 import searchIcon from "../../assets/Images/search.svg";
 import uploadIcon from "../../assets/Images/upload.svg";
@@ -9,13 +10,13 @@ function Header() {
     return (
         <>
             <header className="header">
-                <a className="header__logo" href="#">
+                <Link className="header__logo" to="/">
                     <img className="header__logo-image" src={brainflixLogo} alt="BrainFlix" />
-                </a>
+                </Link>
                 <div className="header__main">
                     <form className="header__main-search">
                         <input className="header__main-search-bar" placeholder="Search" type="text" name="searchBar" id="searchBar" size="35" />
-                        <image className="header__main-search-image" src={searchIcon} type="image" name="headerImage" id="headerImage" />
+                        <img className="header__main-search-image" src={searchIcon} type="image" name="headerImage" id="headerImage" />
                     </form>
                     <img className="header__main-image--active1" src={profileImage} alt="profile" />
                 </div>
