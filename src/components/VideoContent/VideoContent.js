@@ -1,5 +1,5 @@
 import React from "react";
-import "../Description/Description.scss";
+import "./VideoContent.scss";
 import likesIcon from "../../assets/Images/likes.svg";
 import viewsIcon from "../../assets/Images/views.svg";
 import Comments from "../Comments/Comments.js"
@@ -7,7 +7,7 @@ import Form from "../Form/Form.js"
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function VideoDescription({ selectedVideoId }) {
+function VideoContent({ selectedVideoId }) {
     const [video, setVideo] = useState(null);
 
     useEffect(() => {
@@ -69,4 +69,4 @@ function VideoDescription({ selectedVideoId }) {
     )
 }
 
-export default VideoDescription;
+export default VideoContent;

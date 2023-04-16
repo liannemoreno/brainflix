@@ -4,9 +4,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import VideoNav from "../../components/VideoNav/VideoNav.js"
 import VideoHero from '../../components/VideoHero/VideoHero.js';
-import Comments from "../../components/Comments/Comments.js";
-import Description from '../../components/Description/Description.js';
-import Form from "../../components/Form/Form.js";
+import VideoContent from '../../components/VideoContent/VideoContent.js';
 
 
 function HomePage() {
@@ -37,7 +35,7 @@ function HomePage() {
             <section className="main">
                 <section className="main__main">
                     <div className="main__description">
-                        <Description selectedVideoId={videoIdToDisplay} />
+                        <VideoContent selectedVideoId={videoIdToDisplay} />
                     </div>
                 </section>
                 <section className="main__nav">
@@ -51,5 +49,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-{/* <VideoNav clickHandler={videoClick} videos={filteredVideos} /> */ }
