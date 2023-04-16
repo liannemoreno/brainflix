@@ -3,6 +3,7 @@ import "../Description/Description.scss";
 import likesIcon from "../../assets/Images/likes.svg";
 import viewsIcon from "../../assets/Images/views.svg";
 import Comments from "../Comments/Comments.js"
+import Form from "../Form/Form.js"
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -58,13 +59,13 @@ function VideoDescription({ selectedVideoId }) {
                     </p>
                 </div>
             </section>
-            {/* <div className="main__form">
-                <Form selectedVideoId={videoIdToDisplay} />
+            <div className="main__form">
+                <Form comments={comments} />
             </div>
             <div className="main__comments">
                 <Comments comments={comments} />
             </div>
-            <div /> */}
+            <div />
         </>
     )
 }
