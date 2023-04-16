@@ -53,6 +53,7 @@
 
             & p {
                 padding: 0 5.625rem;
+                text-decoration: none;
             }
 
             @include mixins.tablet {

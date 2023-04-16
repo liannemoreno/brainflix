@@ -5,7 +5,6 @@ import publishIcon from "../../assets/Images/add_comment.svg"
 
 
 function Form({comments}) {
-    
     return (
         <section className="form">
             <h2 className="form__title">{comments.length} Comments</h2>

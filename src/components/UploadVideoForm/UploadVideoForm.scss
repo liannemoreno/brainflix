@@ -119,6 +119,8 @@
     &-button {
         display: flex;
         flex-direction: column;
+       
+
 
         &-publish {
             display: flex;
@@ -131,6 +133,7 @@
             align-items: center;
             justify-content: flex-start;
             height: 14vw;
+            
 
             @include tablet{
                 height: 8vw;
