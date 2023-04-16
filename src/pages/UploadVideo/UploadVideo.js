@@ -1,6 +1,5 @@
 import '../UploadVideo/UploadVideo.scss';
 import UploadVideoFrom from '../../components/UploadVideoForm/UploadVideoForm.js';
-import { useState } from 'react';
 
 function UploadVideo() {
     return (

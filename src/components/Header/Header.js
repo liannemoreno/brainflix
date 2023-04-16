@@ -1,6 +1,6 @@
 import React from "react";
 import '../Header/Header.scss';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import brainflixLogo from "../../assets/Images/BrainFlix-logo.svg";
 import searchIcon from "../../assets/Images/search.svg";
 import uploadIcon from "../../assets/Images/upload.svg";
@@ -21,10 +21,12 @@ function Header() {
                     <img className="header__main-image--active1" src={profileImage} alt="profile" />
                 </div>
                 <div className="header__button">
-                    <button className="header__button-upload">
-                        <img className="header__button-upload-image" src={uploadIcon} alt="upload icon"/>
-                        <p>UPLOAD</p>
-                    </button>
+                    <Link to="/video-upload">
+                        <button className="header__button-upload">
+                            <img className="header__button-upload-image" src={uploadIcon} alt="upload icon" />
+                            <p>UPLOAD</p>
+                        </button>
+                    </Link>
                 </div>
                 <img className="header__image--active2" src={profileImage} alt="profile" />
             </header>
