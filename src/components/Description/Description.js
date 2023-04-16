@@ -16,7 +16,6 @@ function VideoDescription({ selectedVideoId }) {
         }
         axios.get(`https://project-2-api.herokuapp.com/videos/${selectedVideoId}?api_key=123`)
             .then(response => {
-                console.log(response.data);
                 setVideo(response.data);
             })
     }, [selectedVideoId])
