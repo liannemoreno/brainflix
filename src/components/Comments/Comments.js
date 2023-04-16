@@ -2,8 +2,8 @@ import React from "react";
 import "../Comments/Comments.scss"
 import grayImage from "../../assets/Images/mercury.png"
 
-function Comments({selectedVideo}) {
-    const {comments} = selectedVideo;
+
+function Comments({comments}) {
     return (
         <section className="comments">
            {

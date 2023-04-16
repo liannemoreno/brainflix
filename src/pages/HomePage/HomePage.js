@@ -10,13 +10,13 @@ import Form from "../../components/Form/Form.js";
 
 
 function HomePage() {
-    const {idFromParams} = useParams();
+    const { idFromParams } = useParams();
     const [videos, setVideos] = useState([])
 
-    let defaultVideoId= null;
+    let defaultVideoId = null;
 
-    if (videos.length > 0){
-        defaultVideoId= videos[0].id;
+    if (videos.length > 0) {
+        defaultVideoId = videos[0].id;
     }
 
     let videoIdToDisplay = idFromParams || defaultVideoId;
@@ -33,19 +33,13 @@ function HomePage() {
 
     return (
         <div className="App">
-            <VideoHero selectedVideoId={videoIdToDisplay} videos={videos}/>
+            <VideoHero selectedVideoId={videoIdToDisplay} videos={videos} />
             <section className="main">
-                {/* <section className="main__main">
+                <section className="main__main">
                     <div className="main__description">
                         <Description selectedVideoId={videoIdToDisplay} />
                     </div>
-                    <div className="main__form">
-                        <Form selectedVideoId={videoIdToDisplay} />
-                    </div>
-                    <div className="main__comments">
-                        <Comments selectedVideoId={videoIdToDisplay} />
-                    </div>
-                </section> */}
+                </section>
                 <section className="main__nav">
                     <div className="main__nav-bar">
                         <VideoNav videos={filteredVideos} />
@@ -58,4 +52,4 @@ function HomePage() {
 
 export default HomePage;
 
-{/* <VideoNav clickHandler={videoClick} videos={filteredVideos} /> */}
+{/* <VideoNav clickHandler={videoClick} videos={filteredVideos} /> */ }
