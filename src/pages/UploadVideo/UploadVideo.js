@@ -4,7 +4,7 @@ import UploadVideoFrom from '../../components/UploadVideoForm/UploadVideoForm.js
 function UploadVideo() {
     return (
         <>
-            <h2> Upload Video</h2>
+            <h2 className="upload-video__title"> Upload Video</h2>
             <UploadVideoFrom />
         </>
     )

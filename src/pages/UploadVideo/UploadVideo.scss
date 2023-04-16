@@ -3,7 +3,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global" as *;
 
-h2 {
+.upload-video__title{
         padding:5%;
         border-top: .0625rem $color-secondary-mercury solid;
         font-weight: 600;

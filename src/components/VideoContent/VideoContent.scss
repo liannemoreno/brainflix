@@ -15,11 +15,7 @@
         }
         
         & p{
-            padding-bottom: 5%;
-            
-            @include mixins.tablet{
-                padding-bottom: 0%;
-            }
+            @include mixins.padding-bottom5;
         }
     }
 
@@ -55,7 +51,7 @@
         }
         
         &-right{
-            padding: 0 0 5% 13.75%; 
+            padding: 0 24px 5% 13.75%; 
 
             @include mixins.tablet{
                 display:flex;
