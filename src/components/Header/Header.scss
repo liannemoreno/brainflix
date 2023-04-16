@@ -114,7 +114,7 @@
                 background-color: $color-secondary-alabaster;
                 border-radius: .25rem;
                 border-width: .009rem;
-                
+                padding-left: 15px;
 
                 @include mixins.desktop {
                     height: 1.9rem;
@@ -130,6 +130,9 @@
 
             &-image{
                 position: absolute;
+                left: 5px;
+                width: 15px;
+                top: 25%;
             }
 
         }
