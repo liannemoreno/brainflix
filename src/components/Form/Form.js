@@ -4,7 +4,7 @@ import profileImage from "../../assets/Images/Mohan-muruge.jpg";
 import publishIcon from "../../assets/Images/add_comment.svg"
 
 
-function Form({comments}) {
+function Form({ comments }) {
     return (
         <section className="form">
             <h2 className="form__title">{comments.length} Comments</h2>

@@ -7,5 +7,17 @@ h2 {
         padding:5%;
         border-top: .0625rem $color-secondary-mercury solid;
         font-weight: 600;
+        font-size: 1.5rem;
+
+
+        @include tablet{
+            font-size: 33px;
+            padding-top:3%;
+            padding-bottom: 3%;
+        }
+
+        @include desktop{
+            padding-bottom: 2%;
+        }
 
     }

@@ -103,6 +103,7 @@
         &-search {
             padding-top: 5%;
             padding-bottom: 5%;
+            position:relative;
 
             @include mixins.desktop {
                 padding: 0;
@@ -113,6 +114,7 @@
                 background-color: $color-secondary-alabaster;
                 border-radius: .25rem;
                 border-width: .009rem;
+                
 
                 @include mixins.desktop {
                     height: 1.9rem;
@@ -124,7 +126,10 @@
                     padding-left: 2%;
                 }
 
+            }
 
+            &-image{
+                position: absolute;
             }
 
         }
