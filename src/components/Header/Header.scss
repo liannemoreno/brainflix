@@ -137,11 +137,10 @@
                 position: absolute;
                 left: .25rem;
                 width: .9375rem;
-                top: 25%;
+                top: 33%;
 
                 @include mixins.tablet{
                     left:.4375rem;
-                    top: 33%;
                 }
 
                 @include mixins.desktop{

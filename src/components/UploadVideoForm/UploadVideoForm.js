@@ -1,6 +1,6 @@
 import React from "react";
 import "../UploadVideoForm/UploadVideoForm.scss";
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import thumbnail from '../../assets/Images/Upload-video-preview.jpg';
 import publishIcon from '../../assets/Images/publish.svg';
 
@@ -8,7 +8,6 @@ import publishIcon from '../../assets/Images/publish.svg';
 
 
 function UploadVideoFrom() {
-
     const navigate = useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault();
