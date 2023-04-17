@@ -3,19 +3,23 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/global" as global;
 
-.nav{
+.nav {
 
-    & h4{
+    & h4 {
         font-weight: 600;
-        color:$color-primary-silver;
+        color: $color-primary-silver;
         padding: 5% 5% 3% 5%;
         line-height: 1.125rem;
         font-size: .75rem;
 
-        @include mixins.desktop{
-            padding: 22% 5% 10% 5%;
+        @include mixins.tablet {
+            padding: 2% 5%;
+        }
+
+        @include mixins.desktop {
+            padding: 10% 0% 5% 0%;
         }
 
     }
-    
+
 }

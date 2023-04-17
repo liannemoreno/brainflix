@@ -10,7 +10,7 @@ function Header() {
     return (
         <>
             <header className="header">
-                <Link className="header__logo" to="/" style={{textDecoration:'none'}}>
+                <Link className="header__logo" to="/" style={{ textDecoration: 'none' }}>
                     <img className="header__logo-image" src={brainflixLogo} alt="BrainFlix" />
                 </Link>
                 <div className="header__main">
@@ -21,7 +21,7 @@ function Header() {
                     <img className="header__main-image--active1" src={profileImage} alt="profile" />
                 </div>
                 <div className="header__button">
-                    <Link to="/video-upload" style={{ textDecoration: 'inherit'}}>
+                    <Link to="/video-upload" style={{ textDecoration: 'inherit' }}>
                         <button className="header__button-upload">
                             <img className="header__button-upload-image" src={uploadIcon} alt="upload icon" />
                             <p>UPLOAD</p>
