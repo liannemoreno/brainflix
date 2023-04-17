@@ -25,4 +25,4 @@ function VideoHero({selectedVideoId, videos}) {
 
     
 }
-export default VideoHero
+export default VideoHero;

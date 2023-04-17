@@ -22,7 +22,7 @@ function HomePage() {
     const filteredVideos = videos.filter(video => video.id !== videoIdToDisplay)
 
     useEffect(() => {
-        axios.get('https:/project-2-api.herokuapp.com/videos/?api_key=c98f4ffe-8ba9-4da3-95d5-1e6d91091ddb')
+        axios.get('https://project-2-api.herokuapp.com/videos/?api_key=c98f4ffe-8ba9-4da3-95d5-1e6d91091ddb')
             .then(response => {
                 setVideos(response.data);
             })
