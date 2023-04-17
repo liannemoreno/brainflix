@@ -6,12 +6,13 @@
 .description{
     &__title{
         font-weight: 600;
-        border-bottom: .0625rem $color-secondary-mercury solid;
+        border-bottom: 1px $color-secondary-mercury solid;
         margin: 5% 5% 0% 5%;
-        font-size:1.5rem;
+        font-size:24px;
 
         @include mixins.tablet{
             border-bottom: none;
+            font-size: 33px;
         }
         
         & p{
@@ -21,7 +22,7 @@
 
     &__details{
         display:flex;
-        border-bottom: .0625rem $color-secondary-mercury solid;
+        border-bottom: 1px $color-secondary-mercury solid;
         margin: 5% 5% 0% 5%;
         color:$color-primary-silver;
         justify-content: space-between;
@@ -37,6 +38,7 @@
                 color:$color-primary-black;
                 font-weight: 600;
                 padding-bottom: 10%;
+                font-size: .75rem;
             }
 
             @include mixins.tablet{
@@ -44,14 +46,16 @@
                 padding:0%;
 
                 &--date{
-                    padding-left: 1.875rem;
+                    padding-left: 30px;
+                    font-size: .75rem;
                 }
 
             }
         }
         
         &-right{
-            padding: 0 1.5rem 5% 13.75%; 
+            padding: 0 24px 5% 13.75%; 
+            font-size: .75rem;
 
             @include mixins.tablet{
                 display:flex;
@@ -61,6 +65,7 @@
             &--views{
                 padding-bottom: 10%;
                 display:flex;
+                font-size: .75rem;
 
                 & img{
                     padding-right:10%;
@@ -70,13 +75,14 @@
             &--likes{
                 padding-bottom: 10%;
                 display:flex;
+                font-size: .75rem;
 
                 & img{
                     padding-right:10%;
                 }
 
                 @include mixins.tablet{
-                    padding-right: 1.875rem;
+                    padding-right: 30px;
                 }
 
             }
@@ -87,6 +93,6 @@
 
     &__textbox{
         padding: 5%;
-        font-size: .8125rem;
+        font-size: 13px;
     }
 }

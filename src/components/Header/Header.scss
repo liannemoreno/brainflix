@@ -110,11 +110,12 @@
             }
 
             &-bar {
-                height: 1.6875rem;
+                height: 1.8rem;
                 background-color: $color-secondary-alabaster;
                 border-radius: .25rem;
                 border-width: .009rem;
                 padding-left: .9375rem;
+                width:96%;
 
                 @include mixins.desktop {
                     height: 1.9rem;
