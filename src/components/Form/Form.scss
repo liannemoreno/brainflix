@@ -16,10 +16,13 @@
     }
 
     &__title {
-        font-size: .8125rem;
         padding-bottom: 2%;
         font-size: .8125rem;
 
+        @include mixins.tablet{
+            font-size: .875rem;
+            padding-bottom: revert;
+        }
     }
 
     &__input {
@@ -36,6 +39,7 @@
         justify-content: space-evenly;
 
         @include mixins.tablet {
+            padding: 2% 0%;
             flex-direction: row;
             display: flex;
             align-items: center;
@@ -64,7 +68,6 @@
 
             &-text {
                 color: $color-primary-silver;
-                font-size: .8125rem;
                 font-weight: 600;
                 padding-bottom: 5%;
                 font-size: .75rem;
@@ -91,13 +94,11 @@
 
                 @include mixins.tablet {
                     padding-bottom: 2%;
-                    height: 1.5rem;
-                    width: 50vw;
+                    height: 2.5rem;
+                    width: 25rem;
                 }
 
                 @include mixins.desktop {
-                    padding-bottom: 2%;
-                    height: 1.5rem;
                     width: 30vw;
                 }
 
@@ -156,7 +157,7 @@
                 background-color: $color-primary-blue;
                 color: $color-primary-white;
                 height: 2.5rem;
-                width: 22%;
+                width: 25%;
                 cursor: pointer;
                 text-align: center;
                 line-height: 0.625rem;
@@ -170,7 +171,6 @@
                 flex-direction: row;
                 align-items: center;
                 margin-top: .625rem;
-                margin-right: 5%;
 
                 & img {
                     margin-left: 5%;

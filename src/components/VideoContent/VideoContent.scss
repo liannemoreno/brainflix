@@ -17,6 +17,10 @@
         
         & p{
             @include mixins.padding-bottom5;
+
+            @include mixins.tablet{
+                padding-bottom:revert;
+            }
         }
     }
 
@@ -29,6 +33,7 @@
 
         @include mixins.tablet{
             padding-bottom: 0%;
+            margin: 1% 5% 0% 5%;
         }
 
         &-left{
@@ -94,5 +99,10 @@
     &__textbox{
         padding: 5%;
         font-size: 13px;
+
+        @include mixins.tablet{
+            padding: 3% 5%;
+            font-size: 14px;
+        }
     }
 }
