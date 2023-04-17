@@ -114,7 +114,7 @@
                 background-color: $color-secondary-alabaster;
                 border-radius: .25rem;
                 border-width: .009rem;
-                padding-left: 15px;
+                padding-left: .9375rem;
 
                 @include mixins.desktop {
                     height: 1.9rem;
@@ -124,15 +124,29 @@
                     color: $color-primary-black;
                     font-family: Avenir;
                     padding-left: 2%;
+
+                    @include mixins.tablet{
+                        padding-left: 5%;
+
+                    }
                 }
 
             }
 
             &-image{
                 position: absolute;
-                left: 5px;
-                width: 15px;
+                left: .25rem;
+                width: .9375rem;
                 top: 25%;
+
+                @include mixins.tablet{
+                    left:.4375rem;
+                    top: 33%;
+                }
+
+                @include mixins.desktop{
+                    top: 24%;
+                }
             }
 
         }
