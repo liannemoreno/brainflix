@@ -14,7 +14,7 @@ function VideoContent({ selectedVideoId }) {
         if (selectedVideoId === null) {
             return;
         }
-        axios.get(`https://project-2-api.herokuapp.com/videos/${selectedVideoId}?api_key=123`)
+        axios.get(`http://localhost:8083/videos/${selectedVideoId}`)
             .then(response => {
                 setVideo(response.data);
             })
