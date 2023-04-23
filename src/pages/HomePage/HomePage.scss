@@ -10,15 +10,20 @@
         &__nav {
             margin-right: 4%;
             margin-left: 1%;
-            
+
 
         }
 
         &_main {
             margin-left: 4%;
-            border-right:0.0625rem solid $color-secondary-mercury;
-           
+
         }
     }
+
+}
+
+
+.main__main {
+    border-right: 1px solid $color-secondary-mercury;
 
 }

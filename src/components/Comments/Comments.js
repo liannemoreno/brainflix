@@ -9,7 +9,9 @@ function Comments({ comments }) {
             {
                 comments.map(comment =>
                     <div className="comment" key={comment.id}>
-                        <div className="comment__img"></div>
+                        <div className= "comment__image--wrapper">
+                            <div className="comment__img"></div>
+                        </div>
                         <div className="comment__wrapper">
                             <div className="comment__title">
                                 <p className="comment__title--name">{comment.name}</p>

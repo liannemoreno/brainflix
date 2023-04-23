@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/Fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/Fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/Fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Avenir", serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+.nav h4 {
+  font-weight: 600;
+  color: #afafaf;
+  padding: 5% 5% 3% 5%;
+  line-height: 1.125rem;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 48rem) {
+  .nav h4 {
+    padding: 2% 5%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .nav h4 {
+    padding: 10% 0% 5% 0%;
+  }
+}/*# sourceMappingURL=VideoNav.css.map */

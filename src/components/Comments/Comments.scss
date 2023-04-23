@@ -25,27 +25,16 @@
 
     &__img {
         border-radius: 50%;
-        width: 8rem;
+        width: 2.5rem;
         height: 2.25rem;
         border: none;
         padding-left: .25rem;
         background-color: $color-secondary-mercury;
 
         @include mixins.tablet {
-            width: 4rem;
-            height: 2.5rem;
             border: none;
             padding-left: 0rem;
-
-
         }
-
-        @include mixins.desktop {
-            width: 3rem;
-
-
-        }
-
 
     }
 

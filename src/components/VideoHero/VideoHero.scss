@@ -10,6 +10,7 @@
 
         &--poster{
             width: 100%;
+            aspect-ratio: 16 / 9;
 
             @include mixins.tablet{
                 padding-left: 5%;

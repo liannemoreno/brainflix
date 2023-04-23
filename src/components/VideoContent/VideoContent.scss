@@ -17,7 +17,6 @@
         
         & p{
             @include mixins.padding-bottom5;
-
             @include mixins.tablet{
                 padding-bottom:revert;
             }

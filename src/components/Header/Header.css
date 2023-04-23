@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/Fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/Fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("../../assets/Fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Avenir", serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+@media screen and (min-width: 48rem) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5rem;
+  }
+}
+.header__logo {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (min-width: 48rem) {
+  .header__logo {
+    margin-right: 15%;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header__logo {
+    margin-right: 49%;
+  }
+}
+.header__button-upload {
+  width: 90vw;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-color: #0095FF;
+  border-color: #0095FF;
+  border-radius: 0.25rem;
+  border-width: 0.009rem;
+  height: 2.25rem;
+}
+.header__button-upload p {
+  padding: 0 5.625rem;
+  text-decoration: none;
+}
+@media screen and (min-width: 48rem) {
+  .header__button-upload {
+    width: 20vw;
+    height: 1.875rem;
+  }
+  .header__button-upload p {
+    padding: 0 1.625rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header__button-upload {
+    width: 11vw;
+    height: 1.975rem;
+  }
+  .header__button-upload p {
+    padding: 0 1.625rem;
+  }
+}
+.header__main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__main-image--active1 {
+  border-radius: 50%;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+@media screen and (min-width: 48rem) {
+  .header__main-image--active1 {
+    display: none;
+  }
+}
+.header__main-search {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: relative;
+}
+@media screen and (min-width: 80rem) {
+  .header__main-search {
+    padding: 0;
+  }
+}
+.header__main-search-bar {
+  height: 1.8rem;
+  background-color: #FAFAFA;
+  border-radius: 0.25rem;
+  border-width: 0.009rem;
+  padding-left: 0.9375rem;
+  width: 96%;
+}
+@media screen and (min-width: 80rem) {
+  .header__main-search-bar {
+    height: 1.9rem;
+  }
+}
+.header__main-search-bar::-moz-placeholder {
+  color: #323232;
+  font-family: Avenir;
+  padding-left: 2%;
+}
+.header__main-search-bar::placeholder {
+  color: #323232;
+  font-family: Avenir;
+  padding-left: 2%;
+}
+@media screen and (min-width: 48rem) {
+  .header__main-search-bar::-moz-placeholder {
+    padding-left: 5%;
+  }
+  .header__main-search-bar::placeholder {
+    padding-left: 5%;
+  }
+}
+.header__main-search-image {
+  position: absolute;
+  left: 0.25rem;
+  width: 0.9375rem;
+  top: 33%;
+}
+@media screen and (min-width: 48rem) {
+  .header__main-search-image {
+    left: 0.4375rem;
+  }
+}
+@media screen and (min-width: 80rem) {
+  .header__main-search-image {
+    top: 24%;
+  }
+}
+@media screen and (max-width: 48rem) {
+  .header__image--active2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 48rem) {
+  .header__image--active2 {
+    display: revert;
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}/*# sourceMappingURL=Header.css.map */
