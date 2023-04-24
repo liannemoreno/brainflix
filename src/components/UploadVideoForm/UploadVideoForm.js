@@ -46,7 +46,7 @@ function UploadVideoForm() {
         <form className="upload__form">
             <div className="upload__form-image">
                 <label className="upload__form-image--title">VIDEO THUMBNAIL</label>
-                <img className="upload__form-image--file" src={"http://localhost:8083/videos/"} alt="video thumbnail" />
+                <img className="upload__form-image--file" src={"http://localhost:8083/videos/image9.jpeg"} alt="thumnail of the video that is being uploaded" />
             </div>
             <div className="upload__form-wrapper">
                 <div className="upload__form-title">

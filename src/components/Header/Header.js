@@ -11,14 +11,14 @@ function Header() {
         <>
             <header className="header">
                 <Link className="header__logo" to="/" style={{ textDecoration: 'none' }}>
-                    <img className="header__logo-image" src={brainflixLogo} alt="BrainFlix" />
+                    <img className="header__logo-image" src={brainflixLogo} alt="BrainFlix logo" />
                 </Link>
                 <div className="header__main">
                     <form className="header__main-search">
                         <input className="header__main-search-bar" placeholder="Search" type="text" name="searchBar" id="searchBar" size="35" />
-                        <img className="header__main-search-image" src={searchIcon} type="image" name="headerImage" id="headerImage" />
+                        <img className="header__main-search-image" src={searchIcon} type="image" name="headerImage" id="headerImage" alt="magnifying glass icon"/>
                     </form>
-                    <img className="header__main-image--active1" src={profileImage} alt="profile" />
+                    <img className="header__main-image--active1" src={profileImage} alt="profile image " />
                 </div>
                 <div className="header__button">
                     <Link to="/video-upload" style={{ textDecoration: 'inherit' }}>
@@ -28,7 +28,7 @@ function Header() {
                         </button>
                     </Link>
                 </div>
-                <img className="header__image--active2" src={profileImage} alt="profile" />
+                <img className="header__image--active2" src={profileImage} alt="profile image" />
             </header>
         </>
     )

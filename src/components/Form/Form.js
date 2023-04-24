@@ -11,7 +11,7 @@ function Form({ comments }) {
             <div className="form__wrapper">
                 <div className="form__input">
                     <form className="form__main" action="#">
-                        <img className="form__main-image" src={profileImage} type="image" name="headerImage" id="headerImage" />
+                        <img className="form__main-image" src={profileImage} type="image" name="headerImage" id="headerImage" alt ="profile image of the person commenting"/>
                         <div className="form__main-comment">
                             <label className="form__main-comment-text" htmlFor="comment">JOIN THE CONVERSATION</label>
                             <textarea className="form__main-comment-textarea" type="text" cols="10" name="comment" id="comment" placeholder="Add a new comment"></textarea>

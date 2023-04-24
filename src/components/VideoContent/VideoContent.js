@@ -42,7 +42,7 @@ function VideoContent({ selectedVideoId }) {
                     </div>
                     <div className="description__details-right">
                         <p className="description__details-right--likes">
-                            <img src={viewsIcon} alt="views icon"></img>
+                            <img src={viewsIcon} alt="eye icon"></img>
                             {views}
                         </p>
                         <p className="description__details-right--views">
