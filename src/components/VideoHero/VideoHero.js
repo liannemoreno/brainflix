@@ -14,9 +14,7 @@ function VideoHero({selectedVideoId, videos}) {
     return (
         <section className="hero">
             <div className="hero__video">
-                <video className="hero__video--poster" poster={image} controls>
-                    <source src={video} type="video/mp4" />
-                    Your browser does not support the video tag.
+                <video className="hero__video--poster" poster={"http://localhost:8083/videos/" + selectedVideo.image} controls>
                 </video>
             </div>
         </section>
