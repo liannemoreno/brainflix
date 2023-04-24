@@ -18,6 +18,8 @@ function VideoContent({ selectedVideoId }) {
             .then(response => {
                 setVideo(response.data);
             })
+            .catch(err =>console.log(err));
+            
     }, [selectedVideoId])
 
     if (video === null) {

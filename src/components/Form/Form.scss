@@ -163,7 +163,6 @@
 
             @include mixins.tablet {
                 display: revert;
-
                 background-color: $color-primary-blue;
                 color: $color-primary-white;
                 height: 2.5rem;

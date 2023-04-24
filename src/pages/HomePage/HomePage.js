@@ -26,6 +26,7 @@ function HomePage() {
             .then(response => {
                 setVideos(response.data);
             })
+            .catch(err =>console.log(err));
     }, [])
 
 
